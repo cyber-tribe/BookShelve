@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div class="book_list">
+        {% for book in books %}
+            <img src="{{book['url']}}">
+            <h3>{{book['name']}}</h3>
+        {% endfor %}
+    </div>
+</body>
+</html>
